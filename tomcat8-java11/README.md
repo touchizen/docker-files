@@ -1,6 +1,6 @@
-# Tomcat 8 on Java 8
+# Tomcat 8 on Java 11
 
-This image includes Tomcat 8 installation and deployment. It is based on [inovatrend/java8](https://registry.hub.docker.com/u/inovatrend/java8/) , check there what else is installed on it.
+This image includes Tomcat 8 installation and deployment. It is based on [tuxxon/java11](https://registry.hub.docker.com/u/tuxxon/java11/) , check there what else is installed on it.
 
 Tomcat runs as [runit](http://smarden.org/runit/) service. It is installed in /opt/tomcat dir, and includes Tomcat Manager for deployment of webapps.
 
@@ -31,7 +31,7 @@ You can now configure to this Tomcat server using:
 A prebuilt container is available on Docker Hub, you can get it with following command
 
 ```sh
-docker pull inovatrend/tomcat8-java8
+docker pull tuxxon/tomcat8-java11:0.1
 ```
 
 ### Usage
@@ -39,13 +39,13 @@ docker pull inovatrend/tomcat8-java8
 To test run it, run following command:
 
 ```sh
-docker run --rm -P -t -i inovatrend/tomcat8-java8 /sbin/my_init -- bash -l
+docker run --rm -P -t -i tuxxon/tomcat8-java11 /sbin/my_init -- bash -l
 ```
 
 To run it as daemon, you can use command similar to this one:
 
 ```sh
-docker run -d -p 49154:8080 --name app_name -e "JAVA_OPTS=-Dsome.property=value -Xmx1024m" -e "TOMCAT_PASS=somePass" inovatrend/tomcat8-java8
+docker run -d -p 49154:8080 --name app_name -e "JAVA_OPTS=-Dsome.property=value -Xmx1024m" -e "TOMCAT_PASS=somePass" tuxxon/tomcat8-java11:0.1
 ```
 
 

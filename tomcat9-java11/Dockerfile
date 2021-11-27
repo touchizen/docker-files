@@ -1,4 +1,4 @@
-FROM java11:0.1
+FROM tuxxon/java11:0.1
 
 MAINTAINER Gordon Ahn <gordon.ahn@touchizen.com>
 

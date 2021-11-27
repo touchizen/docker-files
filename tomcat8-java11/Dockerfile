@@ -1,4 +1,4 @@
-FROM java11:0.1
+FROM tuxxon/java11:0.1
 
 MAINTAINER Gordon Ahn <gordon.ahn@touchizen.com>
 
@@ -10,7 +10,7 @@ RUN apt-get update && \
     apt-get install -yq --no-install-recommends pwgen ca-certificates && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
-    
+
 # Install tomcat
 RUN \
     wget -q https://archive.apache.org/dist/tomcat/tomcat-${TOMCAT_MAJOR_VERSION}/v${TOMCAT_MINOR_VERSION}/bin/apache-tomcat-${TOMCAT_MINOR_VERSION}.tar.gz && \
