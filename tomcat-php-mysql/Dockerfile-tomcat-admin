@@ -1,0 +1,4 @@
+FROM inovatrend/tomcat8-java8:latest
+
+# Delete existing ROOT folder
+RUN ["rm", "-rf", "/usr/local/tomcat/webapps/ROOT"]
