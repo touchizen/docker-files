@@ -1,5 +1,5 @@
-# Tomcat PHP MySQL
-
+# Tomcat  MySQL PHPMyAdmin
+,
 Docker running Tomcat, MySQL and PHPMyAdmin.
 
 ## Overview
