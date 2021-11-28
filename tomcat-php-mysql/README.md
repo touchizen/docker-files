@@ -137,14 +137,11 @@ When developing, you can use [Makefile](https://en.wikipedia.org/wiki/Make_(soft
 | apidoc        | Generate documentation of API                |
 | clean         | Clean directories for reset                  |
 | code-sniff    | Check the API with PHP Code Sniffer (`PSR2`) |
-| composer-up   | Update PHP dependencies with composer        |
 | docker-start  | Create and start containers                  |
 | docker-stop   | Stop and clear all services                  |
-| gen-certs     | Generate SSL certificates for `nginx`        |
 | logs          | Follow log output                            |
 | mysql-dump    | Create backup of all databases               |
 | mysql-restore | Restore backup of all databases              |
-| phpmd         | Analyse the API with PHP Mess Detector       |
 | test          | Test application with phpunit                |
 
 ### Examples
